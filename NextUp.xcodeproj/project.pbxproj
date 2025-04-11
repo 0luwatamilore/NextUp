@@ -11,6 +11,7 @@
 		3FDB80412DA948BB00695F8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB80402DA948BB00695F8D /* ContentView.swift */; };
 		3FDB80432DA948BC00695F8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB80422DA948BC00695F8D /* Assets.xcassets */; };
 		3FDB80462DA948BC00695F8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB80452DA948BC00695F8D /* Preview Assets.xcassets */; };
+		3FDB80512DA95B4700695F8D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB804E2DA9491200695F8D /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3FDB80402DA948BB00695F8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3FDB80422DA948BC00695F8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FDB80452DA948BC00695F8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FDB804E2DA9491200695F8D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		3FDB803D2DA948BB00695F8D /* NextUp */ = {
 			isa = PBXGroup;
 			children = (
+				3FDB80502DA95A6000695F8D /* Views */,
 				3FDB803E2DA948BB00695F8D /* NextUpApp.swift */,
 				3FDB80402DA948BB00695F8D /* ContentView.swift */,
 				3FDB80422DA948BC00695F8D /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				3FDB80452DA948BC00695F8D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3FDB80502DA95A6000695F8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FDB804E2DA9491200695F8D /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDB80512DA95B4700695F8D /* LoginView.swift in Sources */,
 				3FDB80412DA948BB00695F8D /* ContentView.swift in Sources */,
 				3FDB803F2DA948BB00695F8D /* NextUpApp.swift in Sources */,
 			);

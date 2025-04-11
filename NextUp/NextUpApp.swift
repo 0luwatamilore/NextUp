@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct NextUpApp: App {
+    // store user default information
+    @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isLoggedIn {
+                ContentView()
+            } else {
+                LoginView()
+            }
         }
     }
 }
