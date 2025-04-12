@@ -15,10 +15,12 @@ struct NextUpApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if isLoggedIn {
-                ContentView()
-            } else {
-                LoginView(authViewModel: authViewModel)
+            NavigationView {
+                if isLoggedIn {
+                    ContentView()
+                } else {
+                    LoginView(authViewModel: authViewModel)
+                }
             }
         }
     }
