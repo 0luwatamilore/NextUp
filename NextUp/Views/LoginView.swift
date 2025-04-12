@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
+    @ObservedObject var authViewModel: AuthViewModel
     @State private var username: String = ""
     @State private var password: String = ""
     
@@ -48,6 +49,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(authViewModel: AuthViewModel())
     }
 }

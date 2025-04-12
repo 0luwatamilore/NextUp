@@ -11,13 +11,14 @@ import SwiftUI
 struct NextUpApp: App {
     // store user default information
     @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
+    @StateObject var authViewModel: AuthViewModel = AuthViewModel()
     
     var body: some Scene {
         WindowGroup {
             if isLoggedIn {
                 ContentView()
             } else {
-                LoginView()
+                LoginView(authViewModel: authViewModel)
             }
         }
     }

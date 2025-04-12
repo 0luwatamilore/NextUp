@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SignUpView: View {
     @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
+    @ObservedObject var authViewModel: AuthViewModel
     @State private var errorMessage: String = ""
     @State private var firstname: String = ""
     @State private var lastname: String = ""
@@ -46,5 +47,5 @@ struct SignUpView: View {
 }
 
 #Preview {
-    SignUpView()
+    SignUpView(authViewModel: AuthViewModel())
 }
